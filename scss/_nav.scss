@@ -1,0 +1,72 @@
+.header {
+    position: fixed;
+    z-index: 10;
+    animation-name: fade-in;
+    animation-duration: 1s;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 160px;
+        background-color: rgba(0, 0, 0, 0);
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            li a {
+                text-decoration: none;
+                color: #000000;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 17px;
+                margin: 50px;
+            }
+        }
+    }
+
+    .iconos-nav{
+
+        .perfil {
+            position: absolute;
+            top: 2rem;
+            right: 5rem;
+            color: #ffffff;
+        }
+        form button a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .contactanos {
+            position: absolute;
+            top: 2rem;
+            right: 7rem;
+            color: #ffffff;
+        }
+        h5 {
+            text-align: center;
+            padding: 10px;
+        }
+    }
+
+}
+
+/* ---------Animacion Nav----------- */
+.header:hover {
+    background-color: rgba(255, 255, 255, 0.275);
+}
+@keyframes fade-in {
+    0%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
