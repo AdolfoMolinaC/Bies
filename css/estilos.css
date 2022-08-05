@@ -3,6 +3,8 @@
   z-index: 10;
   animation-name: fade-in;
   animation-duration: 1s; }
+  .header:hover {
+    background-color: rgba(255, 255, 255, 0.275); }
   .header nav {
     display: flex;
     flex-direction: column;
@@ -39,9 +41,6 @@
     padding: 10px; }
 
 /* ---------Animacion Nav----------- */
-.header:hover {
-  background-color: rgba(255, 255, 255, 0.275); }
-
 @keyframes fade-in {
   0% {
     transform: translateY(-150px); }
