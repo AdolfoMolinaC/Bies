@@ -1,4 +1,141 @@
 @import "_variables";
 @import "_nav";
 @import "_carousel";
-@import "_footer"
+@import "_footer";
+@import "_home";
+@import "_tienda";
+@import "_armario";
+@import "_perfil";
+
+/* ----------------------REGISTRARSE | main---------------------- */
+
+.div-main-registro {
+    height: 100vh;
+    background-color: $color-Ligth;
+    text-align: center;
+    padding-top: 220px;
+    font-size: 22px;
+}
+
+
+/* ====================MEDIAS QUERIES=================== */
+
+
+@media screen and (max-width:1240px) {
+    main .h2 h2 {
+        font-size: 40px;
+    }
+    .main-armario .galeria {
+        padding: 50px;
+        padding-bottom: 20px;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .img9, .img10, .img11, .img12, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28, .img29, .img30 {
+        display: none;
+    }
+    
+    .carousel-armario {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    } 
+}
+
+@media screen and (max-width:1023px){
+    main .h2 h2 {
+        font-size: 30px;
+    }
+    .fondo h1 {
+        font-size: 60px;
+    }
+    .main-tienda div h2 {
+        font-size: 60px;
+    }
+    .main-armario .fondo-armario h2 {
+        font-size: 60px;
+    }
+    .main-armario .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .carousel-armario, .img13, .img14, .img15, .img16, .inicio-sesion, .registrarse {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    main .h2 {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    main .div-inicio-sesion {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-perfil {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8rem;
+        align-items: center;  
+    }
+    main #contactanos {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width:669px) {
+    .iconos-nav .perfil {
+        right: 2rem;
+    }
+    .iconos-nav .contactanos {
+        right: 4rem;
+    }
+    .fondo h1 {
+        font-size: 50px;
+        padding: 25px;
+    }
+    .main-armario .galeria{
+        padding: 25px;
+    }
+    .main-armario .fondo-armario h2 {
+        font-size: 50px;
+        padding: 25px;
+    }
+    .main-perfil{
+        justify-content: center;
+        align-content: center;
+    }
+    .main-perfil .contactanos{
+    font-size: 21px;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem !important;
+    margin: 0px;
+    text-align: center;
+    }
+    
+
+ }
+
+ @media screen and (max-width:500px) {
+    .fondo h1 {
+        font-size: 35px;
+    }
+    .main-armario .fondo-armario h2 {
+        font-size: 40px;
+        padding: 25px;
+    }
+ }
+
+ @media screen and (max-width:375px) {
+    .main-armario .fondo-armario h2{
+        font-size: 30px;
+    }
+ }

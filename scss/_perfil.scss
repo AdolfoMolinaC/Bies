@@ -1,0 +1,41 @@
+.main-perfil {
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.204)), url(../imagenes/fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    .div-inicio-sesion {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 23px;
+        width: 500px;
+        .inicio-sesion {
+            background-color: rgba(0, 0, 0, 0.405);
+            color: white;
+            margin-bottom: 100px;
+            padding: 30px;
+            border-radius: 1rem;
+        }
+        .registrarse {
+            background-color: rgba(0, 0, 0, 0.405);
+            color: white;
+            padding: 30px;
+            border-radius: 1rem;
+        }
+    }
+    .contactanos {
+        background-color: rgba(0, 0, 0, 0.405);
+        border-radius: 1rem;
+        color: #ffffff;
+        font-size: 21px;
+        padding: 2.5rem 5rem 2.5rem 5rem;
+        margin: 50px;
+        text-align: center;
+    }
+}

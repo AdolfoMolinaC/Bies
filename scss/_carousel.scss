@@ -1,0 +1,52 @@
+// carousel home
+.contenedor {
+    background-color: $color-Ligth;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    .carousel-inner{
+
+        .carousel-item{
+            .carousel-caption {
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $color-Ligth;
+            h5 {
+                background-color: rgba(0, 0, 0, 0.405);
+                padding: 6px;
+                width: 160px;
+                border-radius: .3rem;
+                &:hover{
+                    transform: scale(1.5);
+                    background-color: $color-Ligth;
+                    color: black;
+                    font-weight: 700; 
+                }
+            }
+        }
+    }
+    
+}
+
+
+// carousel armario
+
+.carousel-armario {
+    grid-column-start: span 3;
+    grid-row-start: span 3;
+    .carousel-inner{
+        
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
