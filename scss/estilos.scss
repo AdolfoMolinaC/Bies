@@ -23,119 +23,222 @@
 
 @media screen and (max-width:1240px) {
     main .h2 h2 {
-        font-size: 40px;
+        font-size: $fs-4;
     }
-    .main-armario .galeria {
+
+    .main-armario .flips {
         padding: 50px;
-        padding-bottom: 20px;
+        padding-bottom: $spacing-p2;
         grid-template-columns: repeat(6, 1fr);
     }
 
-    .img9, .img10, .img11, .img12, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28, .img29, .img30 {
+    .img9,
+    .img10,
+    .img11,
+    .img12,
+    .img19,
+    .img20,
+    .img21,
+    .img22,
+    .img23,
+    .img24,
+    .img25,
+    .img26,
+    .img27,
+    .img28,
+    .img29,
+    .img30 {
         display: none;
     }
-    
+
     .carousel-armario {
         grid-column-start: span 2;
         grid-row-start: span 2;
-    } 
+    }
 }
 
-@media screen and (max-width:1023px){
+@media screen and (max-width:1023px) {
     main .h2 h2 {
-        font-size: 30px;
+        font-size: $fs-3;
     }
+
     .fondo h1 {
-        font-size: 60px;
+        font-size: $fs-6;
     }
+
     .main-tienda div h2 {
-        font-size: 60px;
-    }
-    .main-armario .fondo-armario h2 {
-        font-size: 60px;
-    }
-    .main-armario .galeria {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    .carousel-armario, .img13, .img14, .img15, .img16, .inicio-sesion, .registrarse {
-        display: none;
+        font-size: $fs-6;
     }
 
+    .main-armario {
+        .fondo-armario {
+            h2 {
+                font-size: $fs-6;
+            }
+        }
+
+        .flips {
+            height: 160vh;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        .carousel-armario,
+        .img13,
+        .img14,
+        .img15,
+        .img16,
+        .inicio-sesion,
+        .registrarse {
+            display: none;
+        }
+    }
 }
-
 @media screen and (max-width:768px) {
-    main .h2 {
-        display: none;
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column; 
-        text-align: center;
-    }
-    nav ul li a {
-        font-size: 15px;
-    }
+        main {
+            .h2 {
+                display: none;
+            }
+        }
 
-    main .div-inicio-sesion {
-        display: flex;
-        flex-direction: column;
+        .header {
+            nav {
+                ul {
+
+                    li {
+                        a {
+                            font-size: $fs-2 - 5;
+                            margin: 30px;
+                        }
+                    }
+                }
+            }
+
+            .iconos-nav {
+                .perfil {
+                    right: 2rem;
+                }
+
+                .contactanos {
+                    right: 4rem;
+                }
+            }
+        }
+
+        .div-inicio-sesion {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-perfil {
+            display: flex;
+            flex-direction: column;
+            padding-top: 8rem;
+            align-items: center;
+        }
+
+        main #contactanos {
+            padding-top: 100px;
+        }
+
+        .main-armario {
+
+            .flips {
+                height: 160vh;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+
+                .img36 {
+                    display: none;
+                }
+            }
+        }
     }
-    .main-perfil {
-        display: flex;
-        flex-direction: column;
-        padding-top: 8rem;
-        align-items: center;  
-    }
-    main #contactanos {
-        padding-top: 100px;
-    }
-}
 
 @media screen and (max-width:669px) {
-    .iconos-nav .perfil {
-        right: 2rem;
-    }
-    .iconos-nav .contactanos {
-        right: 4rem;
-    }
-    .fondo h1 {
-        font-size: 50px;
-        padding: 25px;
-    }
-    .main-armario .galeria{
-        padding: 25px;
-    }
-    .main-armario .fondo-armario h2 {
-        font-size: 50px;
-        padding: 25px;
-    }
-    .main-perfil{
-        justify-content: center;
-        align-content: center;
-    }
-    .main-perfil .contactanos{
-    font-size: 21px;
-    padding: 1.5rem 2.5rem 1.5rem 2.5rem !important;
-    margin: 0px;
-    text-align: center;
-    }
-    
+        .iconos-nav .perfil {
+            right: 2rem;
+        }
 
- }
+        .iconos-nav {
+            .contactanos {
+                right: 4rem;
+            }
+        }
 
- @media screen and (max-width:500px) {
-    .fondo h1 {
-        font-size: 35px;
-    }
-    .main-armario .fondo-armario h2 {
-        font-size: 40px;
-        padding: 25px;
-    }
- }
+        .fondo {
+            h1 {
+                font-size: $fs-5;
+                padding: $spacing-m3 - 5;
+            }
+        }
 
- @media screen and (max-width:375px) {
-    .main-armario .fondo-armario h2{
-        font-size: 30px;
+        .main-armario {
+            .flips {
+                padding: 2$spacing-p3 - 5;
+            }
+
+            .fondo-armario {
+
+                h2 {
+                    font-size: $fs-5;
+                    padding: $spacing-p3 - 5;
+                }
+            }
+        }
+
+        .main-perfil {
+            justify-content: center;
+            align-content: center;
+
+            .contactanos {
+                font-size: $fs-2 + 1;
+                padding: 1.5rem 2.5rem 1.5rem 2.5rem !important;
+                margin: 0px;
+                text-align: center;
+            }
+        }
+
+        footer {
+            height: 350px;
+        }
     }
- }
+
+@media screen and (max-width:500px) {
+        .header {
+            &:hover {
+                background-color: rgba(0, 0, 0, 0);
+            }
+
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        }
+
+        .fondo h1 {
+            font-size: $fs-3 + 5;
+        }
+
+        .main-armario {
+            .fondo-armario {
+                h2 {
+                    font-size: $fs-4;
+                    padding: $spacing-p2 + 5;
+                }
+            }
+        }
+    }
+
+@media screen and (max-width:375px) {
+        .main-armario {
+            .fondo-armario {
+                h2{
+                    font-size: $fs-3;
+                }
+            }
+        }
+    }

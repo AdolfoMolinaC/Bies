@@ -14,25 +14,25 @@
         flex-direction: column;
         text-align: center;
         font-size: 23px;
-        width: 500px;
+        width: $fw-5;
         .inicio-sesion {
             background-color: rgba(0, 0, 0, 0.405);
-            color: white;
+            color: $color-Ligth;
             margin-bottom: 100px;
             padding: 30px;
             border-radius: 1rem;
         }
         .registrarse {
             background-color: rgba(0, 0, 0, 0.405);
-            color: white;
-            padding: 30px;
+            color: $color-Ligth;
+            padding: $spacing-p3;
             border-radius: 1rem;
         }
     }
     .contactanos {
         background-color: rgba(0, 0, 0, 0.405);
         border-radius: 1rem;
-        color: #ffffff;
+        color: $color-Ligth;
         font-size: 21px;
         padding: 2.5rem 5rem 2.5rem 5rem;
         margin: 50px;
