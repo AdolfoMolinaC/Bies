@@ -2,10 +2,11 @@
 @import "_nav";
 @import "_carousel";
 @import "_footer";
-@import "_home";
+@import "_inicio";
 @import "_tienda";
 @import "_armario";
 @import "_perfil";
+@import "_nosotros";
 
 /* ----------------------REGISTRARSE | main---------------------- */
 
@@ -140,11 +141,6 @@
                     right: 4rem;
                 }
             }
-    }
-
-    .div-inicio-sesion {
-            display: flex;
-            flex-direction: column;
     }
 
     .main-perfil {

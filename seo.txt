@@ -2,7 +2,7 @@
     -keywords = "Bies, ropa usada, venta de ropa, comprar ropa, indumentaria usada, accesorios, calzados, armario virtual, armario digital"
     -Description ="En Bies creamos armarios virtuales donde se puede comercializar indumentaria, calzado, accesorios y todo lo relacionado con un outfit"
     -Favicon = Logo
-    -Title = Bies  |  Home
+    -Title = Bies  |  Inicio
     -Modificacion y ajuste de encabezados
     
 -Armario.html

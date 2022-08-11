@@ -254,15 +254,7 @@ main .h2 {
     font-family: serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 90px;
-    /*
-            color: white;
-            padding: 33px;
-            border-radius: 1rem;
-            font-size: 80px;
-            font-family: serif;
-            font-style: italic;
-            font-weight: 500; */ }
+    font-size: 90px; }
 
 .main-armario .clases-tienda {
   justify-content: space-evenly;
@@ -371,6 +363,45 @@ main .h2 {
     margin: 50px;
     text-align: center; }
 
+.main-nosotros .nosotros {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.206), rgba(0, 0, 0, 0.201)), url(../imagenes/fondoNosotros.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: end; }
+  .main-nosotros .nosotros .nosotros-h1 {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center; }
+    .main-nosotros .nosotros .nosotros-h1 h1 {
+      width: 300px;
+      text-align: center;
+      color: white;
+      font-family: serif;
+      font-style: italic;
+      font-size: 40px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px; }
+  .main-nosotros .nosotros .direccion {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px; }
+    .main-nosotros .nosotros .direccion div {
+      width: 250px;
+      height: 250px;
+      text-align: center;
+      border-radius: 15px;
+      color: white; }
+      .main-nosotros .nosotros .direccion div img {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 10px;
+        border-radius: 50%; }
+
 /* ----------------------REGISTRARSE | main---------------------- */
 .div-main-registro {
   height: 100vh;
@@ -440,9 +471,6 @@ main .h2 {
     right: 2rem; }
   .header .iconos-nav .contactanos {
     right: 4rem; }
-  .div-inicio-sesion {
-    display: flex;
-    flex-direction: column; }
   .main-perfil {
     display: flex;
     flex-direction: column;
