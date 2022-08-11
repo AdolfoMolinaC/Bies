@@ -1,0 +1,34 @@
+-Index.html
+    -keywords = "Bies, ropa usada, venta de ropa, comprar ropa, indumentaria usada, accesorios, calzados, armario virtual, armario digital"
+    -Description ="En Bies creamos armarios virtuales donde se puede comercializar indumentaria, calzado, accesorios y todo lo relacionado con un outfit"
+    -Favicon = Logo
+    -Title = Bies  |  Home
+    -Modificacion y ajuste de encabezados
+    
+-Armario.html
+    -keywords = "Bies, ropa usada, venta de ropa, comprar ropa, indumentaria usada, accesorios, calzados, armario virtual, armario digital"
+    -Description = "Crea tu armario virtual en Bies, cargalo con tus prendas y visualiza todo lo que tienes sin tener que levantarte de donde te encuentras"
+    -Favicon = Logo
+    -Title = Bies | Tu armario
+    -Modificacion y ajuste de encabezados
+
+-Tienda.html
+    -keywords = "Bies, ropa usada, venta de ropa, comprar ropa, indumentaria usada, accesorios, calzados, armario virtual, armario digital, marketplace, tienda"
+    -Description = "Crea tu armario virtual en Bies y ve a la tienda donde puedes comprar o vender indumentaria, calzado, accesorios y todo lo relacionado con un outfit"
+    -Favicon = Logo
+    -Title = Bies  |  Tienda virtual
+    -Modificacion y ajuste de encabezados
+
+-perfil.Html
+    -keywords = "Bies, ropa usada, venta de ropa, comprar ropa, indumentaria usada, accesorios, calzados, armario virtual, armario digital"
+    -Description = "En Bies creamos armarios virtuales donde se puede comercializar indumentaria, calzado, accesorios y todo lo relacionado con un outfit"
+    -Favicon = Logo
+    -Title = Bies  |  Tu cuenta
+    -Modificacion y ajuste de encabezados
+
+-registrarse.Html
+    -keywords = "Bies, ropa usada, venta de ropa, comprar ropa, indumentaria usada, accesorios, calzados, armario virtual, armario digital"
+    -Description = "creamos armarios virtuales donde se puede comercializar indumentaria, calzado, accesorios y todo lo relacionado con un outfit"
+    -Favicon = Logo
+    -Title = Bies | Registrarse
+    -Modificacion y ajuste de encabezados

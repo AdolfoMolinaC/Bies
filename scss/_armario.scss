@@ -10,16 +10,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        h2 {
+        h1 {
             background-color: rgba(0, 0, 0, 0.405);
+            color: $color-Ligth;
+            padding: $spacing-p3 - 2;
+            border-radius: 1rem;
+            font-family: serif;
+            font-style: italic;
+            font-weight: 500;
+            font-size: $fs-9;
+            /*
             color: white;
             padding: 33px;
             border-radius: 1rem;
             font-size: 80px;
             font-family: serif;
             font-style: italic;
-            font-weight: 500;
+            font-weight: 500; */
         }
     }
 
@@ -50,14 +57,15 @@
         grid-template-columns: repeat(9, 1fr);
         grid-auto-rows: 250px;
         gap: 10px;
-    
+
         .card-flip {
             perspective: 800;
             -webkit-perspective: 800;
+
             &:hover .cards {
                 transform: rotateY(180deg);
             }
-    
+
             .cards {
                 width: 100%;
                 height: 100%;
@@ -68,20 +76,20 @@
                 box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.55);
                 -webkit-box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.55);
                 -moz-box-shadow: 17px 7px 15px 0px rgba(0, 0, 0, 0.55);
-    
+
                 .flip-front {
                     width: 100%;
                     height: 100%;
                     position: absolute;
                     backface-visibility: hidden;
                     -webkit-backface-visibility: hidden;
-    
+
                     img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-    
+
                 .flip-back {
                     position: absolute;
                     transform: rotateY(180deg);
@@ -94,13 +102,14 @@
                     text-align: center;
                     color: #ffffff;
                     padding: 10px 8px;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: #ffffff;
                         border: solid black 1.5px;
                         border-radius: 10px;
                         padding: 2px 7px;
-                        &:hover{
+                        &:hover {
                             background-color: rgb(90, 90, 90);
                             color: #ffffff;
                             transform: scale(1.3);
@@ -112,5 +121,3 @@
         }
     }
 }
-
-

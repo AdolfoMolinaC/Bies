@@ -119,8 +119,7 @@ footer {
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 60px; }
+  align-items: center; }
   .fondo h1 {
     background-color: rgba(0, 0, 0, 0.405);
     color: #fff;
@@ -145,13 +144,13 @@ main .h2 {
     font-style: italic; }
 
 .fondo-tienda {
+  width: 100%;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.201), rgba(0, 0, 0, 0.207)), url(../imagenes/shopping.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh; }
+  background-attachment: fixed; }
 
 .main-tienda .clases-tienda {
   justify-content: space-evenly;
@@ -166,7 +165,7 @@ main .h2 {
       transform: scale(1.3);
       background-color: #ffffff7a; }
 
-.main-tienda div h2 {
+.main-tienda div h1 {
   font-size: 80px;
   font-family: serif;
   font-style: italic;
@@ -247,15 +246,23 @@ main .h2 {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .main-armario .fondo-armario h2 {
+  .main-armario .fondo-armario h1 {
     background-color: rgba(0, 0, 0, 0.405);
-    color: white;
-    padding: 33px;
+    color: #fff;
+    padding: 28px;
     border-radius: 1rem;
-    font-size: 80px;
     font-family: serif;
     font-style: italic;
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 90px;
+    /*
+            color: white;
+            padding: 33px;
+            border-radius: 1rem;
+            font-size: 80px;
+            font-family: serif;
+            font-style: italic;
+            font-weight: 500; */ }
 
 .main-armario .clases-tienda {
   justify-content: space-evenly;
@@ -406,9 +413,9 @@ main .h2 {
     font-size: 30px; }
   .fondo h1 {
     font-size: 60px; }
-  .main-tienda div h2 {
+  .main-tienda div h1 {
     font-size: 60px; }
-  .main-armario .fondo-armario h2 {
+  .main-armario .fondo-armario h1 {
     font-size: 60px; }
   .main-armario .flips {
     height: 160vh;
@@ -451,18 +458,14 @@ main .h2 {
       display: none; } }
 
 @media screen and (max-width: 669px) {
-  .iconos-nav .perfil {
-    right: 2rem; }
-  .iconos-nav .contactanos {
-    right: 4rem; }
   .fondo h1 {
+    font-size: 50px;
+    padding: 25px; }
+  .main-armario .fondo-armario h1 {
     font-size: 50px;
     padding: 25px; }
   .main-armario .flips {
     padding: 2 25px; }
-  .main-armario .fondo-armario h2 {
-    font-size: 50px;
-    padding: 25px; }
   .main-perfil {
     justify-content: center;
     align-content: center; }
@@ -483,10 +486,16 @@ main .h2 {
     text-align: center; }
   .fondo h1 {
     font-size: 35px; }
-  .main-armario .fondo-armario h2 {
+  .main-armario .fondo-armario h1 {
     font-size: 40px;
-    padding: 25px; } }
+    padding: 25px; }
+  .main-armario .flips {
+    height: 160vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+    .main-armario .flips .img1, .main-armario .flips .img2, .main-armario .flips .img3, .main-armario .flips .img4, .main-armario .flips .img6 {
+      display: none; } }
 
 @media screen and (max-width: 375px) {
-  .main-armario .fondo-armario h2 {
+  .main-armario .fondo-armario h1 {
     font-size: 30px; } }
