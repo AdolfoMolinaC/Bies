@@ -12,25 +12,25 @@
                 display: flex !important;
                 flex-direction: column;
                 align-items: center;
-                
-            }
-        }
-        a {
-            text-decoration: none;
-            color: $color-Ligth;
-            h5 {
-                background-color: rgba(0, 0, 0, 0.405);
-                padding: 6px;
-                width: 160px;
-                border-radius: .3rem;
-                &:hover{
-                    transform: scale(1.5);
-                    background-color: $color-Ligth;
-                    color: black;
-                    font-weight: 700; 
+                a {
+                    text-decoration: none;
+                    color: $color-Ligth;
+                    h5 {
+                        background-color: rgba(0, 0, 0, 0.405);
+                        padding: 3px;
+                        width: 160px;
+                        border-radius: .3rem;
+                        &:hover{
+                            transform: scale(1.3);
+                            background-color: $color-Ligth;
+                            color: black;
+                            font-weight: 700; 
+                        }
+                    }
                 }
             }
         }
+        
     }
     
 }

@@ -66,19 +66,19 @@
     display: flex !important;
     flex-direction: column;
     align-items: center; }
-  .contenedor .carousel-inner a {
-    text-decoration: none;
-    color: #fff; }
-    .contenedor .carousel-inner a h5 {
-      background-color: rgba(0, 0, 0, 0.405);
-      padding: 6px;
-      width: 160px;
-      border-radius: .3rem; }
-      .contenedor .carousel-inner a h5:hover {
-        transform: scale(1.5);
-        background-color: #fff;
-        color: black;
-        font-weight: 700; }
+    .contenedor .carousel-inner .carousel-item .carousel-caption a {
+      text-decoration: none;
+      color: #fff; }
+      .contenedor .carousel-inner .carousel-item .carousel-caption a h5 {
+        background-color: rgba(0, 0, 0, 0.405);
+        padding: 3px;
+        width: 160px;
+        border-radius: .3rem; }
+        .contenedor .carousel-inner .carousel-item .carousel-caption a h5:hover {
+          transform: scale(1.3);
+          background-color: #fff;
+          color: black;
+          font-weight: 700; }
 
 .carousel-armario {
   grid-column-start: span 3;
@@ -180,35 +180,55 @@ main .h2 {
   justify-content: space-evenly;
   border: 0;
   padding-top: 100px; }
-
-.pic-tienda {
-  width: 350px;
-  height: 500px;
-  margin: 2rem;
-  position: relative; }
-  .pic-tienda a img {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75); }
-  .pic-tienda a .img-top {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    transition: 1s ease; }
-    .pic-tienda a .img-top:hover {
-      opacity: 1; }
-  .pic-tienda p {
-    position: absolute;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    top: 0;
-    right: 0;
-    border-radius: 0 1rem 0 1rem;
-    background-color: rgba(255, 255, 255, 0.596);
-    padding: 1.5px 5px 1.5px 5px; }
+  .contenedor-tienda .box-img {
+    width: 350px;
+    height: 500px;
+    margin: 2rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55); }
+    .contenedor-tienda .box-img:hover img {
+      transform: scale(1.1);
+      transition: .8s ease; }
+    .contenedor-tienda .box-img img {
+      width: 100%;
+      height: 100%; }
+    .contenedor-tienda .box-img .box-transparent {
+      width: 100%;
+      height: 100%;
+      color: white;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.359);
+      top: 0;
+      left: 0;
+      opacity: 0; }
+      .contenedor-tienda .box-img .box-transparent:hover {
+        opacity: 1; }
+      .contenedor-tienda .box-img .box-transparent:hover .caption-img {
+        opacity: 1; }
+      .contenedor-tienda .box-img .box-transparent .caption-img {
+        position: absolute;
+        bottom: 100px;
+        left: 40px;
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.5s ease; }
+        .contenedor-tienda .box-img .box-transparent .caption-img p {
+          font-size: 18px; }
+        .contenedor-tienda .box-img .box-transparent .caption-img button {
+          border: none;
+          border-radius: 5px; }
+          .contenedor-tienda .box-img .box-transparent .caption-img button a {
+            color: #000000;
+            text-decoration: none; }
+          .contenedor-tienda .box-img .box-transparent .caption-img button:hover {
+            border: #ffffff solid 1px;
+            background-color: rgba(68, 68, 68, 0.676);
+            transform: scale(1.2); }
+            .contenedor-tienda .box-img .box-transparent .caption-img button:hover a {
+              color: #ffffff; }
 
 .main-tienda .barra-pag div ul {
   justify-content: center !important; }

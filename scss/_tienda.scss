@@ -46,47 +46,71 @@
     justify-content: space-evenly;
     border: 0;
     padding-top: 100px;
-}
 
-.pic-tienda {
-    width: 350px;
-    height: 500px;
-    margin: 2rem;
-    position: relative;
-
-    a {
+    .box-img{
+        width: 350px;
+        height: 500px;
+        margin: 2rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+        -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+        -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+        &:hover img{
+            transform: scale(1.1);
+            transition: .8s ease;
+        }
         img {
             width: 100%;
             height: 100%;
-            border-radius: 1rem;
-            box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
-            -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
         }
-
-        .img-top {
+        .box-transparent {
+            width: 100%;
+            height: 100%;
+            color: white;
             position: absolute;
+            background-color: rgba(0, 0, 0, 0.359);
+            top: 0;
             left: 0;
             opacity: 0;
-            transition: 1s ease;
-
-            &:hover {
+            &:hover{
                 opacity: 1;
+            }
+            &:hover .caption-img{
+                opacity: 1;
+            }
+            .caption-img{
+                position: absolute;
+                bottom: 100px;
+                left: 40px;
+                opacity: 0;
+                transition: transform 0.3s ease, opacity 0.5s ease;
+                p{
+                    font-size: 18px;
+                }
+                button {
+                    border: none;
+                    border-radius: 5px;
+                    a{
+                        color: #000000;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        border: #ffffff solid 1px;
+                        background-color: rgba(68, 68, 68, 0.676);
+                        transform: scale(1.2);
+                        a{
+                            color: #ffffff;
+                        }
+                    }
+                }
             }
         }
     }
-
-    p {
-        position: absolute;
-        font-size: 1.5rem;
-        font-family: sans-serif;
-        top: 0;
-        right: 0;
-        border-radius: 0 1rem 0 1rem;
-        background-color: rgba(255, 255, 255, 0.596);
-        padding: 1.5px 5px 1.5px 5px;
-    }
 }
+
+
 
 .main-tienda {
     .barra-pag {
