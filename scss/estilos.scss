@@ -8,16 +8,6 @@
 @import "_perfil";
 @import "_nosotros";
 
-/* ----------------------REGISTRARSE | main---------------------- */
-
-.div-main-registro {
-    height: 100vh;
-    background-color: $color-Ligth;
-    text-align: center;
-    padding-top: 220px;
-    font-size: 22px;
-}
-
 
 /* ====================MEDIAS QUERIES=================== */
 
@@ -252,3 +242,48 @@
         }
     }
 }
+
+
+
+/* ----------------------REGISTRARSE---------------------- */
+
+//Mixin
+@mixin tamanos ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
+
+//Extend
+
+.basicos{
+    @include tamanos(100%, 100%);
+
+    .main-registro {
+        @extend .basicos;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.201),rgba(0, 0, 0, 0.201)) , url(../imagenes/fondoNosotros.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    
+        .div-main-registro {
+            @include tamanos(100vh, 100%);
+            text-align: center;
+            padding-top: 220px;
+            font-size: 22px;
+            label {
+                background-color: rgba(0, 0, 0, 0.419);
+                color: #fff;
+                width: 300px;
+                text-align: start;
+            }
+            input {
+                @extend label
+            }
+        }
+    }
+}
+
+

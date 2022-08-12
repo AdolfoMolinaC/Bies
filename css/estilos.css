@@ -402,14 +402,6 @@ main .h2 {
         padding-bottom: 10px;
         border-radius: 50%; }
 
-/* ----------------------REGISTRARSE | main---------------------- */
-.div-main-registro {
-  height: 100vh;
-  background-color: #fff;
-  text-align: center;
-  padding-top: 220px;
-  font-size: 22px; }
-
 /* ====================MEDIAS QUERIES=================== */
 @media screen and (max-width: 1240px) {
   main .h2 h2 {
@@ -527,3 +519,25 @@ main .h2 {
 @media screen and (max-width: 375px) {
   .main-armario .fondo-armario h1 {
     font-size: 30px; } }
+
+/* ----------------------REGISTRARSE---------------------- */
+.basicos, .basicos .main-registro {
+  height: 100%;
+  width: 100%; }
+  .basicos .main-registro {
+    background: linear-gradient(rgba(0, 0, 0, 0.201), rgba(0, 0, 0, 0.201)), url(../imagenes/fondoNosotros.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+    .basicos .main-registro .div-main-registro {
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      padding-top: 220px;
+      font-size: 22px; }
+      .basicos .main-registro .div-main-registro label, .basicos .main-registro .div-main-registro input {
+        background-color: rgba(0, 0, 0, 0.419);
+        color: #fff;
+        width: 300px;
+        text-align: start; }
