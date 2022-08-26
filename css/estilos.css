@@ -4,7 +4,7 @@
   animation-name: fade-in;
   animation-duration: 1s; }
   .header:hover {
-    background-color: rgba(47, 47, 47, 0.33); }
+    background-color: rgba(0, 0, 0, 0.404); }
   .header nav {
     display: flex;
     flex-direction: column;
